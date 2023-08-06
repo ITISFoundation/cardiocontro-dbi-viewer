@@ -1,0 +1,37 @@
+name: Cardiovascular Control DBI Viewer
+key: simcore/services/dynamic/cardiocontrol-dbi-viewer
+type: computational
+integration-version: 1.0.0
+version: 1.0.0
+description: Viewer specific for the Cardiovascular Control model on oSPARC. More information [here](https://github.com/ITISFoundation/CardiovascularControl-DBI)
+contact: iavarone@itis.swiss
+thumbnail: https://github.com/ITISFoundation/osparc-assets/blob/cb43207b6be2f4311c93cd963538d5718b41a023/assets/default-thumbnail-cookiecutter-osparc-service.png?raw=true
+authors:
+  - name: Elisabetta Iavarone
+    email: iavarone@itis.swiss
+    affiliation: IT'IS Foundation
+inputs:
+  input_1:
+    displayOrder: 1
+    label: Arterial Pressure
+    description: Tabular (2-column) data with Time (s) and mean arterial pressure (mm Hg)
+    type: data:*/*
+    fileToKeyMap:
+      ArterialPressure.txt: input_1
+  input_2:
+    displayOrder: 2
+    label: Elastance
+    description: Tabular (2-column) data with Time (s) and left ventricular elastance (mm Hg/mL)
+    type: data:*/*
+    fileToKeyMap:
+      Elastance.txt: input_2
+  input_3:
+    displayOrder: 3
+    label: RR intervals
+    description: Tabular (2-column) data with Time (s) and RR intervals (s) (inverse of heart rate)
+    type: data:*/*
+    fileToKeyMap:
+      RRintervals.txt: input_3
+  
+outputs: {}
+  
