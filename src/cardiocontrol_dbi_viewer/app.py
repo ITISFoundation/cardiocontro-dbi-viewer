@@ -1,6 +1,6 @@
 
 import numpy as np
-
+import pandas as pd
 from pathlib import Path
 from typing import List
 import os
@@ -61,7 +61,7 @@ app.layout = html.Div(style=osparc_style,
     ]
 )
 def plot_graphs(n) -> List[go.Figure]:
-    if len(check_inputs()) == 4:
+    if len(check_inputs()) == 3:
 
         figs = [
             plot_top_middle_graph(check_inputs()[0]),
@@ -122,8 +122,8 @@ def plot_bottom_graph(data_path) -> go.Figure:
     fig.update_layout = go.Layout(fig['layout'])
     fig.add_trace(go.Scatter(x=data[xlab], y=data[ylab], name=unit[:-1]))
     fig.update_yaxes(title_text="<br>".join([name,"("+unit]))
-    fig.update_traces(selector=0, patch = {"line": {"shape": 'hv'}})
-    fig.update_xaxes(title_text="Time (s)", row=3)
+    fig.update_traces(patch = {"line": {"shape": 'hv'}})
+    fig.update_xaxes(title_text="Time (s)")
     return fig
  
 

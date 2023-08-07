@@ -13,5 +13,5 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ${PWD}/validation/workspace:/home/jovyan/work/workspace
-      - ${PWD}/validation/input/inputs:/home/jovyan/validation/inputs
-      - ${PWD}/validation/output:/home/jovyan/validation/outputs
+      - ${PWD}/validation/inputs:/home/jovyan/validation/inputs
+      - ${PWD}/validation/outputs:/home/jovyan/validation/outputs
