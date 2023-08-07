@@ -1,6 +1,6 @@
 # Cardiovascular Control Model Viewer
 
-description: Viewer specific for the Cardiovascular Control Model on  o²S²PARC. More information about the Cardiovascular Control Model can be found [here](https://github.com/ITISFoundation/CardiovascularControl-DBI). The source code of this viewer is [here](https://github.com/ITISFoundation/cardiocontro-dbi-viewer).
+Viewer specific for the Cardiovascular Control Model on  o²S²PARC. More information about the Cardiovascular Control Model can be found [here](https://github.com/ITISFoundation/CardiovascularControl-DBI). The source code of this viewer is [here](https://github.com/ITISFoundation/cardiocontro-dbi-viewer).
 
 
 ## Usage
